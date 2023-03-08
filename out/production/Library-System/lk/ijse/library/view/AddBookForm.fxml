@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="641.0" prefWidth="1021.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.library.controller.AddBookFormController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="1024.0">
+         <children>
+            <Label layoutX="1.0" prefHeight="46.0" prefWidth="1021.0" style="-fx-background-color: #ccae62;" text="                                         Book Manage">
+               <font>
+                  <Font name="Baskerville Old Face" size="38.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="1.0" layoutY="46.0" prefHeight="346.0" prefWidth="1021.0" style="-fx-background-color: #485460#95a5a6;">
+               <children>
+                  <JFXTextField fx:id="txtBookId" focusColor="WHITE" layoutX="245.0" layoutY="32.0" onAction="#txtBookIdOnAction" prefHeight="39.0" prefWidth="350.0" promptText="Book Id" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtPrice" focusColor="WHITE" labelFloat="true" layoutX="642.0" layoutY="95.0" onAction="#txtPriceOnAction" onKeyReleased="#txtOnKeyPrice" prefHeight="39.0" prefWidth="350.0" promptText="Price" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtCategory" focusColor="WHITE" labelFloat="true" layoutX="245.0" layoutY="154.0" onAction="#txtCategoryOnAction" onKeyReleased="#txtCategoryKeyRealsed" prefHeight="39.0" prefWidth="350.0" promptText="Category" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtName" focusColor="WHITE" labelFloat="true" layoutX="245.0" layoutY="95.0" onAction="#txtBookNameOnAction" prefHeight="39.0" prefWidth="350.0" promptText="Book Name" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fitHeight="205.0" fitWidth="208.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/bookDTO.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="263.0" layoutY="281.0" mnemonicParsing="false" onAction="#searchbtnOnAction" prefHeight="35.0" prefWidth="84.0" style="-fx-background-color: #f1c40f;" text="Search">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="454.0" layoutY="281.0" mnemonicParsing="false" onAction="#addBtnOnAction" prefHeight="35.0" prefWidth="84.0" style="-fx-background-color: #2980b9;" text="Add">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="670.0" layoutY="281.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="35.0" prefWidth="84.0" style="-fx-background-color: #0be881;" text="Update">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="890.0" layoutY="281.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="35.0" prefWidth="84.0" style="-fx-background-color: #EA2027;" text="Delete">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <JFXTextField fx:id="txtIsbm" focusColor="WHITE" labelFloat="true" layoutX="245.0" layoutY="214.0" onAction="#txtIsbmOnAction" prefHeight="39.0" prefWidth="350.0" promptText="Isbn" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtAuthor" focusColor="WHITE" labelFloat="true" layoutX="642.0" layoutY="32.0" onAction="#txtAuthorOnAction" onKeyReleased="#txtOnKeyauthor" prefHeight="39.0" prefWidth="350.0" promptText="Author" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtShelf" focusColor="WHITE" labelFloat="true" layoutX="642.0" layoutY="154.0" onAction="#txtShelfOnAction" prefHeight="39.0" prefWidth="350.0" promptText="Shelf" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtOrderId" focusColor="WHITE" labelFloat="true" layoutX="642.0" layoutY="214.0" prefHeight="28.0" prefWidth="350.0" promptText="Order Id" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tblAddBook" layoutX="1.0" layoutY="392.0" prefHeight="251.0" prefWidth="1021.0">
+              <columns>
+                <TableColumn fx:id="clmBookId" prefWidth="108.0" text="Book Id" />
+                <TableColumn fx:id="clmBookName" prefWidth="124.0" text="Book Name" />
+                  <TableColumn fx:id="clmCategory" prefWidth="150.0" text="Category" />
+                  <TableColumn fx:id="clmIsbm" prefWidth="147.0" text="Isbm" />
+                  <TableColumn fx:id="clmAuthor" prefWidth="149.0" text="Author" />
+                  <TableColumn fx:id="clmPrice" prefWidth="105.0" text="Price" />
+                  <TableColumn fx:id="clmShelf" prefWidth="110.0" text="Shelf" />
+                  <TableColumn fx:id="clmOrderId" prefWidth="127.0" text="Order Id" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

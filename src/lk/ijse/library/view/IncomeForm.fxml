@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="634.0" prefWidth="1033.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.library.controller.IncomeFormController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1034.0">
+         <children>
+            <AnchorPane layoutX="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1034.0">
+               <children>
+                  <Label layoutX="1.0" prefHeight="46.0" prefWidth="1034.0" style="-fx-background-color: #ccae62;" text="                                              Income">
+                     <font>
+                        <Font name="Baskerville Old Face" size="38.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="1.0" layoutY="46.0" prefHeight="333.0" prefWidth="1034.0" style="-fx-background-color: #485460;">
+                     <children>
+                        <StackedBarChart fx:id="stckdChart" layoutX="-6.0" layoutY="4.0" prefHeight="400.0" prefWidth="829.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </StackedBarChart>
+                        <JFXButton layoutX="875.0" layoutY="123.0" onAction="#printOnAction" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: #f1c40f;" text="Print">
+                           <font>
+                              <Font name="Arial Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="tblIncome" layoutX="-1.0" layoutY="426.0" prefHeight="234.0" prefWidth="1034.0">
+                    <columns>
+                      <TableColumn fx:id="clmMemberId" prefWidth="321.0" text="Member Id" />
+                      <TableColumn fx:id="clmFine" prefWidth="435.0" text="Fine" />
+                        <TableColumn fx:id="clmDate" prefWidth="275.0" text="Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

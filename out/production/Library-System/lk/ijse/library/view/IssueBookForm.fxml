@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="631.0" prefWidth="1026.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.library.controller.IssueBookFormController">
+   <children>
+      <AnchorPane fx:id="pane" layoutX="1.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="1024.0">
+         <children>
+            <Label layoutX="2.0" prefHeight="46.0" prefWidth="1021.0" style="-fx-background-color: #ccae62;" text="                                         Issue Book">
+               <font>
+                  <Font name="Baskerville Old Face" size="38.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="2.0" layoutY="46.0" prefHeight="392.0" prefWidth="1021.0" style="-fx-background-color: #485460;">
+               <children>
+                  <JFXTextField fx:id="txtBookRecordId" layoutX="280.0" layoutY="26.0" onAction="#txtIssueRecordIdOnAction" prefHeight="39.0" prefWidth="553.0" promptText="Issue Record Id" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtBookId" focusColor="WHITE" labelFloat="true" layoutX="280.0" layoutY="139.0" onAction="#txtBookIdOnAction" prefHeight="39.0" prefWidth="553.0" promptText="Book Id" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtMemberId" focusColor="#fcfcfc" labelFloat="true" layoutX="280.0" layoutY="83.0" onAction="#txtMemberIdOnAction" prefHeight="39.0" prefWidth="553.0" promptText="Member Id" style="-fx-background-color: #ecf0f1;">
+                     <font>
+                        <Font name="Bodoni MT" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fitHeight="216.0" fitWidth="244.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/library-bookDTO-icon-15.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="896.0" layoutY="26.0" mnemonicParsing="false" onAction="#searchbtnOnAction" prefHeight="35.0" prefWidth="84.0" style="-fx-background-color: #f1c40f;" text="Search">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="896.0" layoutY="122.0" mnemonicParsing="false" onAction="#AddbtnOnAction" prefHeight="35.0" prefWidth="84.0" style="-fx-background-color: #2980b9;" text="Add">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="896.0" layoutY="221.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="35.0" prefWidth="84.0" style="-fx-background-color: #0be881;" text="Update">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="896.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="35.0" prefWidth="84.0" style="-fx-background-color: #e74c3c;" text="Delete">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="280.0" layoutY="199.0" prefHeight="46.0" prefWidth="553.0" style="-fx-background-color: #ecf0f1;">
+                     <children>
+                        <JFXDatePicker fx:id="dateIssue" onAction="#txtIssueDateOnAction" prefHeight="46.0" prefWidth="553.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="280.0" layoutY="263.0" prefHeight="46.0" prefWidth="553.0" style="-fx-background-color: #ecf0f1;">
+                     <children>
+                        <JFXDatePicker fx:id="dateReturn" onAction="#txtReturnDateOnAction" prefHeight="46.0" prefWidth="553.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="145.0" layoutY="207.0" prefHeight="32.0" prefWidth="129.0" style="-fx-background-color: #95a5a6;" text="Issue Date &gt;">
+                     <font>
+                        <Font name="Arial Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="134.0" layoutY="270.0" prefHeight="32.0" prefWidth="129.0" style="-fx-background-color: #95a5a6;" text="Return Date &gt;">
+                     <font>
+                        <Font name="Arial Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="279.0" layoutY="326.0" prefHeight="46.0" prefWidth="553.0" style="-fx-background-color: #ecf0f1;">
+                     <children>
+                        <JFXComboBox fx:id="cmbStutes" focusColor="WHITE" labelFloat="true" layoutX="-4.0" prefHeight="46.0" prefWidth="559.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="145.0" layoutY="333.0" prefHeight="32.0" prefWidth="108.0" style="-fx-background-color: #95a5a6;" text="Status &gt;">
+                     <font>
+                        <Font name="Arial Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tblIssueBook" layoutY="438.0" prefHeight="203.0" prefWidth="1021.0">
+               <columns>
+                  <TableColumn fx:id="clmIssueBookId" prefWidth="177.0" text="Issue Book Id" />
+                  <TableColumn fx:id="clmMemberId" prefWidth="184.0" text="Member Id" />
+                  <TableColumn fx:id="clmBookId" prefWidth="197.0" text="Book Id" />
+                  <TableColumn fx:id="clmIssueDate" prefWidth="151.0" text="Issue Date" />
+                  <TableColumn fx:id="clmReturnDate" prefWidth="189.0" text="Return Date" />
+                  <TableColumn fx:id="clmStatus" prefWidth="122.0" text="Status" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

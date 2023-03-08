@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardContext" prefHeight="380.0" prefWidth="570.0" style="-fx-background-color: #d2dae2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.library.controller.FineFormController">
+   <children>
+      <Label fx:id="lblDateCount" layoutX="308.0" layoutY="110.0" prefHeight="25.0" prefWidth="204.0" style="-fx-background-color: #ecf0f1;" textFill="#ff0505">
+         <font>
+            <Font size="28.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtFine" layoutX="308.0" layoutY="165.0" prefHeight="40.0" prefWidth="204.0" promptText="Fine For Late One Day" style="-fx-background-color: #ecf0f1;" />
+      <JFXButton layoutX="375.0" layoutY="334.0" onAction="#btnAddOnAction" prefHeight="32.0" prefWidth="137.0" style="-fx-background-color: #27ae60;" text="Add">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="374.0" layoutY="227.0" onAction="#btnCalculateOnAction" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: #95a5a6;" text="Calculate">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblTotal" layoutX="308.0" layoutY="284.0" prefHeight="34.0" prefWidth="204.0" style="-fx-background-color: #ecf0f1;" />
+      <Label layoutX="98.0" layoutY="26.0" prefHeight="46.0" prefWidth="353.0" text="          Fine Form" textFill="#e40000">
+         <font>
+            <Font name="Arial Black" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="114.0" prefHeight="32.0" prefWidth="245.0" text="Number of Days Late  &gt;">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="174.0" prefHeight="32.0" prefWidth="245.0" text="Enter Fine For One Day  &gt;">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="285.0" prefHeight="32.0" prefWidth="245.0" text="Full Fine">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

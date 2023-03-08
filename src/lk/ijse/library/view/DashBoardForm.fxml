@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardContext" prefHeight="698.0" prefWidth="1226.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.library.controller.DashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="653.0" prefWidth="204.0" style="-fx-background-color: #95a5a6;">
+         <children>
+            <JFXButton layoutX="8.0" layoutY="467.0" onAction="#expentureOnAction" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #1289A7;" text="Expenture" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="8.0" layoutY="312.0" onAction="#orderOnAction" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #1289A7;" text="Order" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="-1.0" prefHeight="42.0" prefWidth="204.0" style="-fx-background-color: #3498db;" text=" Quick Access" textFill="#000203">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="8.0" layoutY="56.0" onAction="#dashBoardonaction" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #16a085;" text="Home Page" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="8.0" layoutY="105.0" onAction="#bookOnAction" prefHeight="43.0" prefWidth="189.0" style="-fx-background-color: #1289A7;" text="Book Manage" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="8.0" layoutY="571.0" onAction="#logOutOnAction" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #1289A7;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="7.0" layoutY="156.0" onAction="#memberOnAction" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #1289A7;" text="Member Manage" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="7.0" layoutY="208.0" onAction="#employeeOnAction" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #1289A7;" text="Employee Manage" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="8.0" layoutY="364.0" onAction="#donationOnAction" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #1289A7;" text="Donation" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="7.0" layoutY="518.0" onAction="#incomeOnAction" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #1289A7;" text="Income" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="7.0" layoutY="415.0" onAction="#salaryOnAction" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #1289A7;" text="Salary" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="7.0" layoutY="257.0" onAction="#issuebookOnAction" prefHeight="43.0" prefWidth="189.0" style="-fx-background-color: #1289A7;" text="Issue Book" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="653.0" prefHeight="45.0" prefWidth="1224.0" style="-fx-background-color: #2c3e50;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" prefHeight="26.0" prefWidth="278.0" text="Develop by : Ijse.Sajana@gmail.com" textFill="#fdfff3">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtTime" layoutX="953.0" layoutY="8.0" prefHeight="37.0" prefWidth="271.0" text="10:03:25" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane" layoutX="204.0" layoutY="-6.0" prefHeight="659.0" prefWidth="1019.0" style="-fx-background-color: #485460;">
+         <children>
+            <Separator layoutX="-5.0" layoutY="47.0" orientation="VERTICAL" prefHeight="584.0" prefWidth="0.0" />
+            <AnchorPane layoutX="-2.0" prefHeight="47.0" prefWidth="1020.0" style="-fx-background-color: #3498db;">
+               <children>
+                  <Label layoutX="14.0" layoutY="9.0" prefHeight="31.0" prefWidth="250.0" text="Library Management System" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="848.0" layoutY="18.0" prefHeight="31.0" prefWidth="165.0" text="Welcome,Admin" textFill="WHITE">
+                     <font>
+                        <Font name="Corbel Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="803.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icon-admin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="59.0" prefHeight="285.0" prefWidth="330.0" style="-fx-background-color: #82ccdd;">
+               <children>
+                  <Label layoutX="12.0" layoutY="23.0" prefHeight="39.0" prefWidth="228.0" text="No of Books">
+                     <font>
+                        <Font name="Wingdings 3" size="37.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="71.0" prefHeight="31.0" prefWidth="330.0" style="-fx-background-color: #e55039;" />
+                  <ImageView blendMode="MULTIPLY" fitHeight="70.0" fitWidth="86.0" layoutX="28.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/29302.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblBookCount" layoutX="165.0" layoutY="161.0" prefHeight="37.0" prefWidth="70.0" text="10">
+                     <font>
+                        <Font name="Corbel Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="683.0" layoutY="59.0" prefHeight="285.0" prefWidth="337.0" style="-fx-background-color: #82ccdd;">
+               <children>
+                  <Label layoutX="14.0" layoutY="24.0" prefHeight="47.0" prefWidth="250.0" text="No of Member">
+                     <font>
+                        <Font name="Wingdings 3" size="37.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="71.0" prefHeight="31.0" prefWidth="333.0" style="-fx-background-color: #1e3799;" />
+                  <ImageView fitHeight="70.0" fitWidth="86.0" layoutX="29.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/983470-200.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblNoOfMember" layoutX="169.0" layoutY="160.0" prefHeight="37.0" prefWidth="70.0" text="10">
+                     <font>
+                        <Font name="Corbel Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="352.0" layoutY="59.0" prefHeight="285.0" prefWidth="325.0" style="-fx-background-color: #82ccdd;">
+               <children>
+                  <Label layoutX="14.0" layoutY="24.0" prefHeight="47.0" prefWidth="286.0" text="No of Employees">
+                     <font>
+                        <Font name="Wingdings 3" size="37.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="71.0" prefHeight="31.0" prefWidth="325.0" style="-fx-background-color: #009432;" />
+                  <Label fx:id="lblEmployeeCount" layoutX="163.0" layoutY="162.0" prefHeight="37.0" prefWidth="70.0" text="10">
+                     <font>
+                        <Font name="Corbel Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="27.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/186484-200.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="352.0" layoutY="351.0" prefHeight="298.0" prefWidth="326.0" style="-fx-background-color: #82ccdd;">
+               <children>
+                  <Label layoutX="14.0" layoutY="24.0" prefHeight="39.0" prefWidth="278.0" text="Issue Book Total">
+                     <font>
+                        <Font name="Wingdings 3" size="35.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="1.0" layoutY="69.0" prefHeight="31.0" prefWidth="325.0" style="-fx-background-color: #ff9f1a;" />
+                  <Label fx:id="lblIssueBook" layoutX="164.0" layoutY="149.0" prefHeight="37.0" prefWidth="70.0" text="10">
+                     <font>
+                        <Font name="Corbel Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="14.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/library-book-icon-15.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="351.0" prefHeight="298.0" prefWidth="326.0" style="-fx-background-color: #82ccdd;">
+               <children>
+                  <Label layoutX="13.0" layoutY="24.0" prefHeight="37.0" prefWidth="307.0" text="Pending Return Books">
+                     <font>
+                        <Font name="Wingdings 3" size="29.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="1.0" layoutY="69.0" prefHeight="31.0" prefWidth="330.0" style="-fx-background-color: #b71540;" />
+                  <Label fx:id="lblReturn" layoutX="166.0" layoutY="160.0" prefHeight="37.0" prefWidth="70.0" text="10">
+                     <font>
+                        <Font name="Corbel Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="14.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/return-book.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="298.0" fitWidth="337.0" layoutX="703.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Library_Freepik.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

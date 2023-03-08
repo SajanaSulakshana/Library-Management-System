@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0528e2a6-03d1-4ee9-90cb-d7090f491b39">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Employee_Id" class="java.lang.String"/>
+	<field name="Emplyoee_Nic" class="java.lang.String"/>
+	<field name="Employee_Name" class="java.lang.String"/>
+	<field name="Empoyee_Address" class="java.lang.String"/>
+	<field name="Employee_Contact" class="java.lang.String"/>
+	<field name="Employee_Salary" class="java.lang.String"/>
+	<field name="Employee_Date" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="170" y="40" width="210" height="30" uuid="8b226c6b-1d11-4a79-8cc4-23b259ceba92"/>
+				<textElement>
+					<font fontName="Adobe Garamond Pro Bold" size="22"/>
+				</textElement>
+				<text><![CDATA[Sumaga Public Library]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="460" y="10" width="100" height="30" uuid="a0f0a3f2-638a-4d2f-a6d0-97c40161d7fd"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="62" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="318" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="71" width="160" height="30" uuid="44a1a03f-f641-43ff-9759-49a147f3a2bd"/>
+				<textElement>
+					<font fontName="Adobe Caslon Pro" size="16"/>
+				</textElement>
+				<text><![CDATA[Employee Name --]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="111" width="160" height="30" uuid="3cadb5f6-76a6-4a81-ad27-962528ef3533"/>
+				<textElement>
+					<font fontName="Adobe Caslon Pro" size="16"/>
+				</textElement>
+				<text><![CDATA[Employee Nic No --]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="141" width="103" height="30" uuid="36a3427b-d7ca-4519-948e-638f62a306a1"/>
+				<textElement>
+					<font fontName="Adobe Caslon Pro" size="16"/>
+				</textElement>
+				<text><![CDATA[Address --]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="171" width="160" height="30" uuid="c1bf2178-8569-4547-95f9-c86fbde6e083"/>
+				<textElement>
+					<font fontName="Adobe Caslon Pro" size="16"/>
+				</textElement>
+				<text><![CDATA[Contact --]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="201" width="160" height="30" uuid="626ca0cb-36e5-49b2-994c-28cbd1b12ea9"/>
+				<textElement>
+					<font fontName="Adobe Caslon Pro" size="16"/>
+				</textElement>
+				<text><![CDATA[Salary --]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="241" width="160" height="30" uuid="b5317646-16f9-493d-bf93-1e18506f2833"/>
+				<textElement>
+					<font fontName="Adobe Caslon Pro" size="16"/>
+				</textElement>
+				<text><![CDATA[Register Date --]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="30" width="100" height="30" uuid="9d01bd70-52e5-46aa-b31c-3ca71602e80e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Employee_Id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="30" width="150" height="30" uuid="338cbbaf-5987-4428-b3fa-de0a5fd246d7"/>
+				<textElement>
+					<font fontName="Adobe Garamond Pro" size="16"/>
+				</textElement>
+				<text><![CDATA[Employee Id -- ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="200" y="100" width="100" height="30" uuid="f4f77073-2859-4059-809f-e3cbf229871f"/>
+				<textFieldExpression><![CDATA[$F{Emplyoee_Nic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="60" width="100" height="30" uuid="815cbe01-aae2-4945-9b10-0c7f2244f5c0"/>
+				<textFieldExpression><![CDATA[$F{Employee_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="141" width="100" height="30" uuid="b2fd09d5-4dbc-4104-b4cf-0c71f7f85156"/>
+				<textFieldExpression><![CDATA[$F{Empoyee_Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="211" width="100" height="30" uuid="dd7679c5-fb22-4e25-bf46-35384d3979c2"/>
+				<textFieldExpression><![CDATA[$F{Employee_Salary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="180" width="100" height="30" uuid="36acad34-1fe1-4164-8a8a-1942170eac89"/>
+				<textFieldExpression><![CDATA[$F{Employee_Contact}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="240" width="100" height="30" uuid="31eb6ca2-1ee7-4449-95c7-c440541dee4a"/>
+				<textFieldExpression><![CDATA[$F{Employee_Date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
